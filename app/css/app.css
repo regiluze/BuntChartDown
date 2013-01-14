@@ -28,3 +28,17 @@
   content: "";
   padding: 0;
 }
+
+.partial{
+
+    margin: 100px 0px 0px 0px;
+}
+
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}

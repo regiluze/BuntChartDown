@@ -1,0 +1,29 @@
+<div class="container partial hero-unit">
+        <h2>Add new buntChart</h2>
+    <form class="form-horizontal" name="newProjectForm">
+        <fieldset>
+            <legend></legend>
+            <div class="control-group">
+                <label class="control-label " for="name">Project name</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="name" ng-model="project.name" required ng-maxlength="25">
+                    <p class="help-block"></p>
+                </div>
+                <label class="control-label " for="points">Points</label>
+                <div class="controls">
+                    <input type="number" class="input-xlarge" id="points" ng-model="project.points" required integer name="points">
+                    <p class="help-block">Number of points to implement.</p>
+                </div>
+                <label class="control-label" for="hours">Hours</label>
+                <div class="controls">
+                    <input type="number" class="input-xlarge" id="hours" ng-model="project.hours" required integer name="hours">
+                    <p class="help-block">Budgeted hours .</p>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary"  ng-click="add(project)" ng-disabled="newProjectForm.$invalid">create</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
